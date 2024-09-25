@@ -186,22 +186,22 @@ button {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding: 188px 0;
+    padding: 72px 0;
     text-align: center;
     margin: 0 auto;
 }
 
 .hero-section .section-title {
     color: var(--white);
-    font-size: 56px;
-    line-height: 1.07;
     text-transform: none;
-    max-width: 496px;
+    max-width: 216px;
     margin: 0 auto;
+    font-size: 36px;
+    line-height: 1.11;
 }
 
 .hero-section .btn.primary {
-    margin-top: 48px;
+    margin-top: 72px;
 }
 
 .team-section {
@@ -306,6 +306,32 @@ button {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-section {
+        padding: 112px 0;
+    }
+
+    .hero-section .section-title {
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
+
+    .hero-section .btn.primary {
+        margin-top: 36px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .hero-section {
+        padding: 188px 0;
+    }
+
+    .hero-section .btn.primary {
+        margin-top: 48px;
+    }
 }
 /* #endregion */
 
