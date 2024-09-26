@@ -237,7 +237,8 @@ button {
     width: 100%;
 }
 
-.list.team-list .title {
+.list.team-list .title,
+.list.portfolio-list .title {
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;
@@ -248,7 +249,6 @@ button {
 }
 
 .portfolio-list .item {
-    width: calc((100% - 48px) / 3);
     transition: box-shadow var(--transition-slow);
 }
 
@@ -286,6 +286,10 @@ button {
 
 .portfolio-image-container:hover .overlay {
     transform: translateY(0);
+}
+
+.list.portfolio-list .title {
+    text-align: start;
 }
 
 .list img {
@@ -411,6 +415,15 @@ button {
     .team-section .container {
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .portfolio-list {
+        column-gap: 24px;
+        row-gap: 48px;
+    }
+
+    .portfolio-list .item {
+        width: calc((100% - 48px) / 3);
     }
 }
 /* #endregion */
