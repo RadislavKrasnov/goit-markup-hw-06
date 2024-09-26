@@ -63,9 +63,9 @@ img {
 }
 
 .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -163,6 +163,20 @@ button {
 .contacts-list .link {
     transition: color var(--transition-slow);
 }
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media only screen and (min-width: 1158px) {
+    .container {
+        max-width: 1158px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 /* #endregion */
 
 /* #region Sections */
@@ -207,6 +221,11 @@ button {
     background-color: var(--cloud);
 }
 
+.team-section .container {
+    padding-left: 28px;
+    padding-right: 28px;
+}
+
 .list {
     display: flex;
     flex-direction: column;
@@ -216,6 +235,12 @@ button {
 
 .list .item {
     width: 100%;
+}
+
+.list.team-list .title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .portfolio-list {
@@ -268,7 +293,7 @@ button {
 }
 
 .list .card-content {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .list .title {
@@ -341,6 +366,15 @@ button {
     .features-list .title {
         text-align: start;
     }
+
+    .team-section .container {
+        padding-left: 108px;
+        padding-right: 108px;
+    }
+
+    .team-list {
+        row-gap: 64px;
+    }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -372,6 +406,11 @@ button {
 
     .features-list .content {
         font-weight: 400;
+    }
+
+    .team-section .container {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 /* #endregion */
@@ -447,7 +486,7 @@ button {
 .social-media-icons {
     display: flex;
     gap: 24px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .social-media-icon-link {
