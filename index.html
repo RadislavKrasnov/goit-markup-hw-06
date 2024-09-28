@@ -17,7 +17,7 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="page-header">
+    <header hidden class="page-header">
       <div class="container">
         <nav class="page-nav">
           <a class="link logo" href="./index.html"
@@ -507,7 +507,7 @@
     <!-- #region Modal -->
     <div class="backdrop">
       <div class="modal">
-        <button class="btn-close-modal" type="button">
+        <button class="btn-close btn-close-modal" type="button">
           <svg class="btn-close-modal-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -574,5 +574,53 @@
       </div>
     </div>
     <!-- #endregion -->
+     <!-- #region Mobile menu -->
+       <div class="mobile-menu">
+        <button type="button" class="btn-close mobile-menu-close-btn">
+          <svg class="close-menu-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-nav">
+          <li><a class="current" href="#">Studio</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">Contacts</a></li>
+        </ul>
+        <ul class="mobile-menu-contacts">
+          <li><a class="accent" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+          <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        </ul>
+        <ul class="social-media-icons mobile-menu-socials">
+          <li class="social-media-icon-item">
+            <a class="social-media-icon-link" href="https://instagram.com">
+              <svg class="social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-icon-item">
+            <a class="social-media-icon-link" href="https://x.com">
+              <svg class="social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-icon-item">
+            <a class="social-media-icon-link" href="https://facebook.com">
+              <svg class="social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-media-icon-item">
+            <a class="social-media-icon-link" href="https://linkedin.com">
+              <svg class="social-media-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+       </div>
+     <!-- #endregion -->
   </body>
 </html>
