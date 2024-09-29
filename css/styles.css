@@ -229,7 +229,7 @@ button {
     max-width: 1440px;
     background-color: var(--navy-blue);
     background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url('../images/hero/people-office.jpg');
+    url('../images/hero/Dark-bg_mob.jpg');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -376,9 +376,18 @@ button {
     overflow: hidden;
 }
 
+@media (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/hero/Dark-bg_mob@2x.jpg');
+    }
+}
+
 @media only screen and (min-width: 768px) {
     .hero-section {
         padding: 112px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/hero/Dark-bg_tab.jpg');
     }
 
     .hero-section .section-title {
@@ -415,6 +424,13 @@ button {
     }
 }
 
+@media only screen and (min-width: 768px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/hero/Dark-bg_tab@2x.jpg');
+    }
+}
+
 @media only screen and (min-width: 1158px) {
     .section {
         padding: 120px 0;
@@ -422,6 +438,8 @@ button {
 
     .hero-section {
         padding: 188px 0;
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/hero/people-office_1_desk.jpg');
     }
 
     .hero-section .btn.primary {
@@ -458,6 +476,13 @@ button {
 
     .portfolio-list .item {
         width: calc((100% - 48px) / 3);
+    }
+}
+
+@media only screen and (min-width: 1158px) and (min-resolution: 192dpi) {
+    .hero-section {
+        background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/hero/people-office_1_desk@2x.jpg');
     }
 }
 /* #endregion */
