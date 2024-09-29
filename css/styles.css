@@ -91,6 +91,10 @@ button {
     color: var(--navy-blue);
 }
 
+.page-nav-links, .contacts {
+    display: none;
+}
+
 .page-nav-links .link {
     position: relative;
     color: var(--navy-blue);
@@ -136,7 +140,6 @@ button {
 
 .page-header .container,
 .page-header .page-nav,
-.page-nav-links,
 .contacts-list {
     display: flex;
 }
@@ -168,6 +171,33 @@ button {
     .container {
         max-width: 768px;
     }
+    
+    .page-nav-links {
+        display: flex;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+    .logo {
+        margin-right: 120px;
+    }
+
+    .contacts-list {
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .contacts-list .link {
+        padding: 0;
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.04em;
+    }
+    
+    .contacts {
+        display: flex;
+        align-items: center;
+    }
 }
 
 @media only screen and (min-width: 1158px) {
@@ -175,6 +205,10 @@ button {
         max-width: 1158px;
         padding-left: 15px;
         padding-right: 15px;
+    }
+
+    .contacts {
+        display: block;
     }
 }
 /* #endregion */
@@ -497,18 +531,35 @@ button {
     background-color: var(--white);
     border: 1px solid var(--cornflower);
     color: var(--navy-blue);
-  }
+}
 
-  .mobile-menu-close-btn .close-menu-icon {
+.mobile-menu-close-btn .close-menu-icon {
     fill: currentColor;
-  }
+}
 
-  .mobile-menu-close-btn:active,
-  .mobile-menu-close-btn:focus {
+.mobile-menu-close-btn:active,
+.mobile-menu-close-btn:focus {
     color: var(--white);
     background-color: var(--ocean);
     border: none;
-  }
+}
+
+.mobile-menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 24px;
+    min-width: 24px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+    .mobile-menu-btn {
+        display: none;
+    }
+}
 /* #endregion */
 
 /* #region Icons */
@@ -937,7 +988,7 @@ input[type="checkbox"]:checked + .form-label .checkbox-icon {
         font-size: 36px;
         font-weight: 700;
         line-height: 1.11;
-        letter-spacing: 0.045em;
+        letter-spacing: 0.02em;
         text-decoration: none;
     }
 
@@ -958,7 +1009,7 @@ input[type="checkbox"]:checked + .form-label .checkbox-icon {
         font-size: 20px;
         font-weight: 500;
         line-height: 1.2;
-        letter-spacing: 0.025em;
+        letter-spacing: 0.02em;
         text-decoration: none;
     }
 
