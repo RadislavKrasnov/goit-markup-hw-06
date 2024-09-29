@@ -850,7 +850,7 @@ button {
 }
 
 .modal .form-input {
-    padding-left: 38px;
+    padding-left: 34px;
 }
 
 .checkbox {
@@ -909,6 +909,10 @@ input[type="checkbox"]:checked + .form-label .checkbox-icon {
     .form-input, .form-textarea {
         opacity: 1;
     }
+
+    .modal .form-input {
+        padding-left: 38px;
+    }
 }
 /* #endregion */
 /* #region Modal */
@@ -938,8 +942,8 @@ input[type="checkbox"]:checked + .form-label .checkbox-icon {
     background-color: var(--dairy);
     border-radius: 4px;
     box-shadow: var(--modal-shadow);
-    padding: 72px 24px 24px;
-    min-width: 408px;
+    padding: 72px 16px 24px;
+    min-width: 288px;
     transform: translate(-50%, -50%);
     min-height: 584px;
     transition: transform var(--transition-slow);
@@ -952,8 +956,33 @@ input[type="checkbox"]:checked + .form-label .checkbox-icon {
     margin-bottom: 16px;
 }
 
+.modal .agreement-label {
+    display: flex;
+    gap: 8px;
+}
+
 .agreement-link {
     color: var(--iris);
+}
+
+@media only screen and (max-width: 767px) {
+    .agreement-text {
+        max-width: 231px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .modal {
+        padding: 72px 24px 24px;
+    }
+
+    .modal .agreement-label {
+        display: inline;
+    }
+
+    .modal-caption {
+        min-width: 360px;
+    }
 }
 /* #endregion */
 /* #region Mobile menu */
